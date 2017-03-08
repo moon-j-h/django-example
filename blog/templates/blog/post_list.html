@@ -6,17 +6,12 @@
         <div>
             <h1><a href="">Moondal's Blog</a></h1>
         </div>
-
-        <div>
-            <p>published: 04.03.2017, 17:30</p>
-            <h2><a href="">My first post</a></h2>
-            <p>우와우와울ㄴ이ㅏ롱나ㅣ</p>
-        </div>
-
-        <div>
-            <p>published: 04.03.2017, 17:30</p>
-            <h2><a href="">My Second post</a></h2>
-            <p>눈 앞의 존재, 는 살아 움직이는데??</p>
-        </div>
+        {% for post in posts %}
+            <div>
+                <p>published : {{ post.published_date }}</p>
+                <h1><a href="">{{post.title}}</a></h1>
+                <p>{{post.text |linebreaksbr}}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>

@@ -25,7 +25,7 @@ SECRET_KEY = '$5^sz0f6bi5^8m#$r59+*=znups81bd2(c=#wi$4*$7rk5t9x+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['moondal.pythonanywhere.com']
+ALLOWED_HOSTS = ['moondal.pythonanywhere.com', 'localhost']
 
 
 # Application definition
